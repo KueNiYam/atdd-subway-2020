@@ -42,7 +42,7 @@ public class PathDocumentation extends Documentation {
 	void getPath() {
 		List<StationResponse> stationResponses = Arrays.asList(new StationResponse(1L, "잠실역"),
 			new StationResponse(2L, "잠실나루역"));
-		when(pathService.findPath(anyLong(), anyLong(), any())).thenReturn(
+		when(pathService.findPath(anyLong(), anyLong(), any(), any())).thenReturn(
 			new PathResponse(stationResponses, 3, 3, 1250));
 
 		given().log().all().
