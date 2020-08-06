@@ -43,7 +43,10 @@ public class MapControllerTest {
 	void getPath() throws Exception {
 		given(mapService.findPath(anyLong(), anyLong(), any())).willReturn(new PathResponse());
 
-		mockMvc.perform(get("/paths?source=1&target=2&type=DISTANCE")
+		mockMvc.perform(get("/paths")
+			.queryParam("source", "1")
+			.queryParam("target", "2")
+			.queryParam("type", "DISTANCE")
 			.accept(MediaType.APPLICATION_JSON_VALUE))
 			.andExpect(status().isOk())
             .andDo(print());
