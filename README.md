@@ -53,3 +53,10 @@ npm run dev
 ## 📝 License
 
 This project is [MIT](https://github.com/woowacourse/atdd-subway-2020/blob/master/LICENSE.md) licensed.
+
+# 기능 목록
+ - 기본 요금을 내는 노선의 인수 테스트 작성
+ - 경로 조회 문서 자동화 구현
+ - 거리별 요금 기능 구현
+ - 노선별 추가 요금 기능 구현
+ - 나이별 추가 요금 기능 구현
